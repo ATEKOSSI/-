@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Mouna ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- On prépare la balise audio avec le bon dossier dès le départ -->
+    <audio id="musique-anniv" src="assets/audio/music.mp3" loop preload="auto"></audio>
+
+    <div class="container">
+        
+        <!-- ÉCRAN 1 : L'ACCUEIL -->
+        <div id="ecran1" class="ecran actif">
+            <h1>Pour Mouna...</h1>
+            <p class="sous-titre">Un petit espace pour quelqu'un de grand.</p>
+            <button class="btn" onclick="passerAEcran(2)">Entrer</button>
+        </div>
+
+        <!-- ÉCRAN 2 : LE MESSAGE DE BIENVEYANCE -->
+        <div id="ecran2" class="ecran cache">
+            <div class="texte-zone">
+                <p id="texte-poeme"></p>
+            </div>
+            <button id="btn-suivant" class="btn cache" onclick="passerAEcran(3)">Continuer</button>
+        </div>
+
+        <!-- ÉCRAN 3 : LE FINAL -->
+        <div id="ecran3" class="ecran cache">
+            <h1 class="titre-final">🎂 Joyeux Anniversaire, Mouna 🎉</h1>
+            <p class="souhait">Que ta gentillesse continue de briller, peu importe où les chemins mènent. Tout le meilleur pour ton avenir. ❤️</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
