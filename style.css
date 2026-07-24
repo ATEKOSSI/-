@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Fond Violet Nuit */
-    background: linear-gradient(135deg, #1d1b38 0%, #322353 50%, #4e4376 100%);
+    /* Fond Pêche & Corail pastel */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #feada6 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* Texte en blanc pour un bon contraste */
+    color: #4a3e3d; /* Texte sombre doux pour un excellent contraste */
     overflow-x: hidden;
 }
 
@@ -24,14 +24,14 @@ body {
     padding: 20px;
 }
 
-/* Style des cartes/écrans */
+/* Style des cartes/écrans en carte blanche élégante */
 .ecran {
-    background: rgba(255, 255, 255, 0.07); /* Effet verre dépoli */
+    background: rgba(255, 255, 255, 0.85); /* Fond blanc doux translucide */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(235, 130, 140, 0.25);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -60,13 +60,12 @@ body {
 h1 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #f3e8ff; /* Violet très clair doux */
-    text-shadow: 0 0 10px rgba(243, 232, 255, 0.3);
+    color: #d94e67; /* Corail chaud */
 }
 
 .sous-titre {
     font-size: 1.1em;
-    color: #d8b4fe;
+    color: #7d5a5a;
     margin-bottom: 25px;
 }
 
@@ -75,26 +74,26 @@ h1 {
     text-align: left;
     line-height: 1.7;
     font-size: 1.05em;
-    color: #f3e8ff;
+    color: #4a3e3d;
     white-space: pre-wrap; /* Pour respecter les retours à la ligne */
     margin-bottom: 25px;
 }
 
 .titre-final {
     font-size: 2.2em;
-    color: #f43f5e; /* Touche de rose/rouge lumineux pour le final */
+    color: #e11d48; /* Rose/Corail vibrant pour le final */
     margin-bottom: 15px;
 }
 
 .souhait {
     font-size: 1.15em;
     line-height: 1.6;
-    color: #e2e8f0;
+    color: #5c4746;
 }
 
 /* Boutons */
 .btn {
-    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    background: linear-gradient(135deg, #f43f5e 0%, #ff8a65 100%);
     color: white;
     border: none;
     padding: 12px 30px;
@@ -102,11 +101,11 @@ h1 {
     font-weight: 600;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 4px 15px rgba(244, 63, 94, 0.35);
     transition: all 0.3s ease;
 }
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5);
 }
