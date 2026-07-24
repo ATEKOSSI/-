@@ -39,7 +39,7 @@ function passerAEcran(numeroEcran) {
     // 3. Actions spécifiques selon l'écran
     if (numeroEcran === 2) {
         // Lancer la musique dès le premier clic
-        const musique = document.getElementById("misique-anniv");
+        const musique = document.getElementById("musique-anniv");
         musique.play().catch(error => console.log("Lecture audio bloquée :", error));
         
         // Lancer l'effet machine à écrire
