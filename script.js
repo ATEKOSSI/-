@@ -20,15 +20,17 @@ function taperTexte() {
 }
 
 function passerAEcran(numeroEcran) {
-    // 1. Cacher tous les écrans
+    // 1. Cacher tous les écrans et remettre la classe cache
     const ecrans = document.querySelectorAll('.ecran');
     ecrans.forEach(ecran => {
         ecran.classList.remove('actif');
+        ecran.classList.add('cache');
         ecran.style.display = 'none';
     });
 
-    // 2. Afficher l'écran demandé
+    // 2. Afficher l'écran demandé en RETIRANT la classe cache
     const ecranCible = document.getElementById('ecran' + numeroEcran);
+    ecranCible.classList.remove('cache'); // <-- C'est cette ligne qui débloque l'affichage !
     ecranCible.style.display = 'block';
     
     // Petit timeout pour laisser le temps au display de s'activer avant l'animation CSS
@@ -40,7 +42,9 @@ function passerAEcran(numeroEcran) {
     if (numeroEcran === 2) {
         // Lancer la musique dès le premier clic
         const musique = document.getElementById("musique-anniv");
-        musique.play().catch(error => console.log("Lecture audio bloquée :", error));
+        if (musique) {
+            musique.play().catch(error => console.log("Lecture audio bloquée :", error));
+        }
         
         // Lancer l'effet machine à écrire
         taperTexte();
